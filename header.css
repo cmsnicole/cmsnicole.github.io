@@ -1,0 +1,126 @@
+/*font styles for all pages*/
+* {
+    color: #502C0C;
+    font-family: "Dokdo";
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*header styles*/
+header {
+    position: sticky;
+    top: 0;
+    height: 8vw;
+    width: 100%;
+    
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+
+    background-color: #502C0C;
+
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+/*large screen nav*/
+.nav-left, .nav-right {
+    padding-left: 0%;
+    font-size: 3rem;
+}
+
+.nav-left a {
+    display: inline-block;
+    padding: 0em 0.5em;
+
+    color: #fcfcfc;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.nav-left a:hover {
+    transform: rotate(-10deg);
+}
+
+.nav-logo {
+    height: 8vw; /*to align with the height of the nav bar*/
+    margin: 0.5em;
+}
+
+.nav-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.nav-right a {
+    display: inline-block;
+    padding: 0em 0.5em;
+
+    color: #fcfcfc;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.nav-right a:hover {
+    transform: rotate(10deg);
+}
+
+.nav-small {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #502C0C;
+    font-size: 2rem;
+}
+
+.nav-small a {
+    color: #fcfcfc;
+}
+
+.nav-small li:hover {
+    transform: rotate(-1deg);
+}
+
+.nav-small-header {
+    justify-content: space-between; 
+}
+
+.nav-small-dropdown {
+    display: none;
+}
+
+.nav-small-dropdown .active {
+    display: block;
+}
+
+#header-menu {
+
+}
