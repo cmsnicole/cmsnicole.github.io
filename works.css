@@ -14,7 +14,8 @@ main {
   /* shorter than (100vh - (height of header)) -> avoid double scroll bar*/
   /* position: fixed; */
   /* bottom: 0; */
-  height:100vh;
+  /* height:100vh; */
+  height: calc(100vh - 8vw); /* Subtract the height of the header */
   width: 100%;
 
   /*scroll to snap*/
@@ -55,7 +56,7 @@ section {
 
   #first-header{
   /*to avoid first header being hidden */
-    margin: 10vh 0vw 0vw 0vw;
+    /* margin: 10vh 0vw 0vw 0vw; */
     padding: 0vw;
   }
 
@@ -70,7 +71,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding: 1.5vw; */
+    /* margin: 1.5vw; */
 
     /* scroll-margin-top: 22vh; to avoid title being hidden when entered from link */
   }
@@ -129,12 +130,12 @@ section {
     .project-content {
       flex-direction: column;
 
-      scroll-margin-top: 30vh; /* to avoid title being hidden when entered from link */
+      /* scroll-margin-top: 30vh; to avoid title being hidden when entered from link */
     }
   }
 
   @media screen and (max-width:350px){
     #app-and-website-design {
-      scroll-margin-top: 40vh; /* to avoid title being hidden when entered from link */
+      /* scroll-margin-top: 40vh; to avoid title being hidden when entered from link */
     }
   }
