@@ -131,6 +131,10 @@ header li {
     color: #fcfcfc;
 }
 
+.nav-small li {
+    transition: transform 0.3s ease;
+}
+
 .nav-small li:hover {
     transform: rotate(-1deg);
 }
@@ -142,13 +146,16 @@ header li {
 
 .nav-small-dropdown {
     display: none;
-
 }
 
-.nav-small-dropdown .active {
+.nav-small-dropdown.active {
     display: block;
 }
 
 #header-menu {
+    transition: transform 0.4s ease;
+}
 
+.rotated {
+    transform: rotate(-90deg);
 }

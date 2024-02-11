@@ -1,6 +1,7 @@
-const dropdown = document.querySelector('.nav-small-dropdown')
-const menuButton = document.getElementById('header-menu');
+const headerMenu = document.getElementById('header-menu');
+const headerDropdown = document.getElementById('header-dropdown');
 
-menuButton.addEventListener('click', () => {
-    dropdown.classList.toggle('active');
-})
+headerMenu.addEventListener('click', () => {
+    headerDropdown.classList.toggle('active');
+    headerMenu.classList.toggle('rotated');
+});
