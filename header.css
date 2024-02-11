@@ -67,7 +67,7 @@ header li {
     transition: transform 0.3s ease;
 }
 .nav-left a:hover {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
 }
 
 .nav-logo {
@@ -90,14 +90,33 @@ header li {
 }
 
 .nav-right a:hover {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
 }
 
+@media screen and (max-width:865px){
+    .nav-large {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:866px){
+    .nav-small {
+        display: none;
+    }
+}
+
+/*small screen nav*/
 .nav-small {
-    display: flex;
+    /* display: none; */
     flex-direction: column;
 
     background-color: #502C0C;
+
+    height: 10vh;
     font-size: 2rem;
 }
 
@@ -111,6 +130,7 @@ header li {
 
 .nav-small-header {
     justify-content: space-between; 
+    height: 10vh;
 }
 
 .nav-small-dropdown {

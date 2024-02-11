@@ -18,7 +18,7 @@ body, html {
     overflow-y: scroll;
     scroll-snap-type: y proximity;
 
-    background-image: url(banner.png);
+    background-image: url(grain-1.png);
     
     /* background-repeat: no-repeat; */
     background-position: center;
@@ -100,7 +100,7 @@ body, html {
 }
 
 .intro {
-    background-image: url("Space\ -\ L.png"); /*image to be changed*/
+    background-image: url("banner.png"); /*image to be changed*/
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
