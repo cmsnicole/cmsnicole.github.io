@@ -42,6 +42,7 @@ body, html {
     padding: 0% 8%;
 
     scroll-snap-align: start;
+    scroll-margin: 5vh;
   }
 
   section .main-content {
@@ -74,27 +75,10 @@ body, html {
         height: 85px;
       }
   }
-
-  #balloon-idle {
-    display: block;
-}
-
-  #balloon-hover {
-    display: none;
-  }
   
   .balloon:hover {
-
     transform: translate3d(0, 3%, 0);
-    transition: transform 0.4s ease;
-
-    /* #balloon-idle {
-        display: none;
-    } */
-
-   /* #balloon-hover {
-    display: block;
-  } */
+    transition: transform 0.3s ease;
   }
   
   .balloon p {
