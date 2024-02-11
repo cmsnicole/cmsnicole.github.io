@@ -22,7 +22,7 @@ p {
 
 /*header styles*/
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 8vw;
     width: 100%;
