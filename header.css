@@ -112,12 +112,18 @@ header li {
 
 /*small screen nav*/
 .nav-small {
+
+    position: fixed;
+    top: 0;
+    /* height: 8vw; */
+    width: 100%;
+
     /* display: none; */
     flex-direction: column;
 
     background-color: #502C0C;
 
-    height: 10vh;
+    /* height: 10vh; */
     font-size: 2rem;
 }
 
@@ -131,11 +137,12 @@ header li {
 
 .nav-small-header {
     justify-content: space-between; 
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .nav-small-dropdown {
     display: none;
+
 }
 
 .nav-small-dropdown .active {
