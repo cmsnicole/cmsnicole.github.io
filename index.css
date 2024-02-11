@@ -183,13 +183,10 @@ justify-content: space-evenly;
 
         width: 85vw;
         overflow-x: auto; /* Enable horizontal scrolling */
-        /* scrollbar-width: none; Hide scrollbar in Firefox */
-        /* -ms-overflow-style: none; Hide scrollbar in Internet Explorer and Edge */
 
         scroll-snap-type: x mandatory;
     }
     
-    /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
     .skills-button::-webkit-scrollbar {
         display: none;
     }
@@ -222,7 +219,7 @@ justify-content: space-evenly;
 
 @media screen and (max-width:530px){
     .skills-box h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .skills-icon {
@@ -261,6 +258,13 @@ justify-content: space-evenly;
     padding: 10px;
     border-radius: 30px;
     margin: 10px;
+}
+
+
+@media screen and (max-width:530px){
+    .description-skills li {
+        font-size: 1.25rem;
+    }
 }
 
 /*works styles*/
