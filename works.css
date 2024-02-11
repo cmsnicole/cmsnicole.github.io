@@ -56,8 +56,9 @@ section {
 
   #first-header{
   /*to avoid first header being hidden */
-    /* margin: 10vh 0vw 0vw 0vw; */
-    padding: 0vw;
+    /* margin: 0vw 0vw 0vw 0vw; */
+    /* margin-bottom: 0em; */
+    padding-top: 0.67em; /*to create even space between bottom of header and first box (0.67em = default)*/
   }
 
   .project-header {
