@@ -101,6 +101,11 @@ header li {
     .nav-small {
         display: flex;
     }
+
+    .nav-logo {
+        height: 8vw; /*to align with the height of the nav bar*/
+        /* margin: 1em; */
+    }
 }
 
 @media screen and (min-width:866px){
