@@ -28,7 +28,7 @@ main {
   background-position: center;
   background-size: cover;
 
-  margin-top: 10vh;
+  margin-top: 8vw;
 }
 
 /* hide inside scrollbar */
@@ -36,9 +36,11 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:865px){
   main {
-      height: 100vh;
+      /* height: 100vh; */
+
+      margin-top: 8vw;
   }
 }
 
@@ -53,8 +55,8 @@ section {
 
   #first-header{
   /*to avoid first header being hidden */
-    /* margin-top: 10vh; */
-    /* padding-top: 10vh; */
+    margin: 10vh 0vw 0vw 0vw;
+    padding: 0vw;
   }
 
   .project-header {
@@ -68,8 +70,9 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* padding: 1.5vw; */
 
-    scroll-margin-top: 22vh; /* to avoid title being hidden when entered from link */
+    /* scroll-margin-top: 22vh; to avoid title being hidden when entered from link */
   }
 
   .project-content a {
