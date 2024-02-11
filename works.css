@@ -54,15 +54,9 @@ section {
   scroll-margin: 5vh;
 }
 
-  #first-header{
-  /*to avoid first header being hidden */
-    /* margin: 0vw 0vw 0vw 0vw; */
-    /* margin-bottom: 0em; */
-    padding-top: 0.67em; /*to create even space between bottom of header and first box (0.67em = default)*/
-  }
-
   .project-header {
     text-align: center;
+    padding-top: 0.67em; /*to create even space between bottom of header and first box (0.67em = default)*/
 
     /* margin: 0%; */
   }
@@ -72,7 +66,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin: 1.5vw; */
+    margin: 1.5vw;
 
     /* scroll-margin-top: 22vh; to avoid title being hidden when entered from link */
   }
@@ -118,25 +112,11 @@ section {
   }
 
   .project-box:hover .project-name{
-    transform: translateY(2px);
+    transform: translateY(3px);
   }
 
-  @media screen and (min-width:851px){
+  @media screen and (min-width:865px){
     .project-content a {
       width: 40%;
-    }
-  }
-
-  @media screen and (max-width:850px){
-    .project-content {
-      flex-direction: column;
-
-      /* scroll-margin-top: 30vh; to avoid title being hidden when entered from link */
-    }
-  }
-
-  @media screen and (max-width:350px){
-    #app-and-website-design {
-      /* scroll-margin-top: 40vh; to avoid title being hidden when entered from link */
     }
   }
