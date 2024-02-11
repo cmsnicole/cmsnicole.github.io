@@ -9,9 +9,9 @@ body, html {
 
   main {
     /* shorter than (100vh - (height of header)) -> avoid double scroll bar*/
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 
     /*scroll to snap*/
