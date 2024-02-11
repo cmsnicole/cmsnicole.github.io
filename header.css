@@ -168,3 +168,7 @@ header li {
 .rotated {
     transform: rotate(-90deg);
 }
+
+#header-menu {
+    cursor: pointer;
+}

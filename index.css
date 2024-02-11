@@ -114,7 +114,7 @@ body, html {
     margin: 0px;
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:865px){
     .intro-content h1 {
         font-size: 3em;
     }
@@ -168,15 +168,41 @@ justify-content: space-evenly;
     height: auto;
 }
 
-@media screen and (max-width:1000px){
-    .skills-button {
+@media screen and (max-width:865px){
+    /* .skills-button {
         flex-direction: column;
+        justify-content: center;
+    } */
+
+    .skills-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        width: 85vw;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        /* scrollbar-width: none; Hide scrollbar in Firefox */
+        /* -ms-overflow-style: none; Hide scrollbar in Internet Explorer and Edge */
+
+        scroll-snap-type: x mandatory;
+    }
+    
+    /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+    .skills-button::-webkit-scrollbar {
+        display: none;
+    }
+
+    .skills-text {
+        margin: 0% 3%;
+        scroll-snap-align: center;
     }
 
     .skills-box {
         width: 50vw;
         padding: 1vw 10vw;
-        margin: 3%;
+        /* margin: 3% 0%; */
 
         height: fit-content;
         flex-direction: row;
