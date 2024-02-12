@@ -1,4 +1,14 @@
 /*font styles for all pages*/
+@font-face {
+    font-family: "Dokdo";
+    src: url(Dokdo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gaegu";
+    src: url(Gaegu-Regular.ttf);
+}
+
 * {
     color: #502C0C;
     font-family: "Dokdo";
