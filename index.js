@@ -85,3 +85,26 @@ boxDesign.addEventListener('click', () => {
     descriptionDesign.style.display = 'none';
   }
 });
+
+/* copy contact details to clipboard */
+
+    // Function to copy text to clipboard
+    function copyToClipboard(text) {
+      const el = document.createElement('textarea');
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      // document.execCommand('copy');
+      navigator.clipboard.writeText(text);
+      document.body.removeChild(el);
+  }
+
+  // Add an event listener to each link
+  document.querySelectorAll('.contacts-text a').forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          const text = this.querySelector('.contacts-clipboard').innerText; // Get the text to copy
+          copyToClipboard(text); // Copy the text to clipboard
+          alert('Copied to clipboard!'); // Optionally, provide a notification
+      });
+  });
