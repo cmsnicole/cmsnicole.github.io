@@ -187,8 +187,20 @@ justify-content: space-evenly;
         scroll-snap-type: x mandatory;
     }
     
-    .skills-button::-webkit-scrollbar {
+    /* .skills-button::-webkit-scrollbar {
         display: none;
+    } */
+
+    .skills-button::-webkit-scrollbar{
+        width:10px;
+    }
+    .skills-button::-webkit-scrollbar-track{
+        background:none;
+        border-radius:10px;
+    }
+    .skills-button::-webkit-scrollbar-thumb{
+        background:#ffffff;
+        border-radius:10px;
     }
 
     .skills-text {
@@ -199,7 +211,7 @@ justify-content: space-evenly;
     .skills-box {
         width: 50vw;
         padding: 1vw 10vw;
-        /* margin: 3% 0%; */
+        margin: 3% 0%;
 
         height: fit-content;
         flex-direction: row;
