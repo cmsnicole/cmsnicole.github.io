@@ -4,15 +4,15 @@
     src: url(Dokdo-Regular.ttf);
 }
 
-/* @font-face {
+@font-face {
     font-family: "Gaegu";
     src: url(Gaegu-Regular.ttf);
-} */
+}
 
-@font-face {
+/* @font-face {
     font-family: "Nanum Pen";
     src: url(NanumPenScript-Regular.ttf);
-}
+} */
 
 * {
     color: #502C0C;
@@ -33,7 +33,7 @@ h3 {
 
 p {
     font-size: 1rem;
-    font-family: "Nanum Pen";
+    font-family: "Gaegu";
 }
 
 a {
