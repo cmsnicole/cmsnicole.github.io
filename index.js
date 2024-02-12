@@ -94,7 +94,6 @@ boxDesign.addEventListener('click', () => {
       el.value = text;
       document.body.appendChild(el);
       el.select();
-      // document.execCommand('copy');
       navigator.clipboard.writeText(text);
       document.body.removeChild(el);
   }
@@ -105,6 +104,6 @@ boxDesign.addEventListener('click', () => {
           event.preventDefault(); // Prevent the default link behavior
           const text = this.querySelector('.contacts-clipboard').innerText; // Get the text to copy
           copyToClipboard(text); // Copy the text to clipboard
-          alert('Copied to clipboard!'); // Optionally, provide a notification
+          alert('Copied to clipboard!'); // Provide a notification
       });
   });
