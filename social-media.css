@@ -82,7 +82,7 @@ main::-webkit-scrollbar {
     /* margin: 2vw; */
     padding: 1vw;
     border-radius: 2%;
-    background-color: black; /*testing only*/
+    background-color: white; /*testing only*/
     transition: 0.3s;
   }
 
