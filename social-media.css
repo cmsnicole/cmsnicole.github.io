@@ -30,13 +30,6 @@ main::-webkit-scrollbar {
     display: none;
   }
 
-  @media screen and (max-width:865px){
-    main {
-        /* height: 100vh; */
-  
-        /* margin-top: 8vw; */
-    }
-  }
 
   section {
     display: block;
@@ -51,8 +44,15 @@ main::-webkit-scrollbar {
     margin-bottom: 0vh;
   }
 
-  .image-header h3 {
+  .image-header p {
     margin: 3vh 0vh;
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width:865px){
+    .image-header p {
+      font-size: 1.5rem;
+    }
   }
 
 .image-area a{
