@@ -19,7 +19,6 @@
 
   @media screen and (max-width:865px){
     .image-box {
-        height: 70vh;
         padding: 1vw;
       }
   }
