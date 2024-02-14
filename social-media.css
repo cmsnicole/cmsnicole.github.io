@@ -1,0 +1,120 @@
+/*universal styles*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
+  
+    background-image: url(grain-1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  main {
+    height: calc(100vh - 8vw); /* Subtract the height of the header */
+    width: 100%;
+  
+    /*scroll to snap*/
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+
+    background-position: center;
+    background-size: cover;
+  
+    margin-top: 8vw;
+  }
+
+  /* hide inside scrollbar */
+main::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width:865px){
+    main {
+        /* height: 100vh; */
+  
+        /* margin-top: 8vw; */
+    }
+  }
+
+  section {
+    display: block;
+    padding: 0% 8%;
+  }
+  
+  .image-header {
+    text-align: center;
+  }
+
+  .image-header h1 {
+    margin-bottom: 0vh;
+  }
+
+  .image-header h3 {
+    margin: 3vh 0vh;
+  }
+
+.image-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .image-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    width: 87.5%; /* To limit width */
+
+  }
+
+  .image-box {
+    width: 100%;
+    width: 25%;
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 2%;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .image-box .image-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  .image-box.left:hover {
+    transform: rotate(-3deg) scale(1.05);
+  }
+
+  .image-box.center:hover {
+    transform: scale(1.05);
+  }
+
+  .image-box.right:hover {
+    transform: rotate(3deg) scale(1.05);
+  }
+
+  .image-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .image-icons{
+    width: 100%;
+    /* height: auto; */
+  }
+
+  .image-icons-left, .image-icons-right {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    padding-top: 5%;
+  }
