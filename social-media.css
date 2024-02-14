@@ -106,6 +106,7 @@ main::-webkit-scrollbar {
     transform: rotate(3deg) scale(1.05);
   }
 
+
   @media screen and (max-width:865px){
     .image-content {
       flex-direction: column;

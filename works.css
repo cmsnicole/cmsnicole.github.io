@@ -92,8 +92,6 @@ section {
   .project-images:hover img {
     width: 100%;
     height: auto;
-
-    /* transform: scale(1.3); */
   }
 
   .project-images, .project-img {
