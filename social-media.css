@@ -67,6 +67,7 @@ main::-webkit-scrollbar {
     align-items: center;
     justify-content: left;
     /* width: 87.5%; To limit width */
+    padding-left: 4%; /*to align the div to center*/
   }
 
   .image-content a {
