@@ -66,23 +66,15 @@ main::-webkit-scrollbar {
     flex-wrap: wrap;
     align-items: center;
     justify-content: left;
-    /* width: 87.5%; To limit width */
     padding-left: 4%; /*to align the div to center*/
   }
 
   .image-content a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* width: 30%; */
-    /* margin: 1.5vw; */
-
     width: 25%;
     margin: 2vw;
     padding: 1vw;
   }
+
 
   .image-box {
     width: 100%;
@@ -114,6 +106,35 @@ main::-webkit-scrollbar {
     transform: rotate(3deg) scale(1.05);
   }
 
+  @media screen and (max-width:865px){
+    .image-content {
+      flex-direction: column;
+    }
+    
+    .image-content a {
+      width: 85%;
+      margin: 2vw;
+      padding: 1vw;
+    }
+
+    .image-box {
+      padding: 2vw;
+      border-radius: 5%;
+      transition: 0.3s;
+    }
+
+    .image-box .image-img {
+      border-radius: 5%;
+    }
+
+    .image-box.left:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+    .image-box.right:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+  }
+
   .image-buttons {
     display: flex;
     flex-direction: row;
@@ -131,6 +152,12 @@ main::-webkit-scrollbar {
     height: 100%;
     width: 15%;
     padding-top: 5%;
+  }
+
+  @media screen and (max-width:865px){
+    .image-icons-left, .image-icons-right {
+      padding-top: 3%;
+    }
   }
 
   .overlay {

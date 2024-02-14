@@ -150,6 +150,7 @@ header li {
 
     /* height: 10vh; */
     font-size: 2rem;
+    z-index: 1;
 }
 
 .nav-small a {
