@@ -40,6 +40,12 @@ main::-webkit-scrollbar {
     text-align: center;
   }
 
+  .image-header a {
+    font-family: "Gaegu";
+    color: palevioletred;
+    font-weight: bold;
+}
+
   .image-header h1 {
     margin-bottom: 0vh;
   }
@@ -193,5 +199,12 @@ main::-webkit-scrollbar {
   @media screen and (max-width:865px){
     .overlay-image {
       height: 60%;
+    }
+  }
+
+  @media screen and (max-width:630px){
+    .overlay-image {
+      width: 80%;
+      height: auto;
     }
   }
