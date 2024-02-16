@@ -1,0 +1,55 @@
+/*universal styles*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
+  
+    background-image: url(grain-1.png);
+    background-position: center;
+    background-size: cover;
+}
+p {
+    font-size: 1.25rem;
+}
+  
+  main {
+    /* shorter than (100vh - (height of header)) -> avoid double scroll bar*/
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* height:100vh; */
+    height: calc(100vh - 8vw); /* Subtract the height of the header */
+    width: 100%;
+  
+    /*scroll to snap*/
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  
+    /* background-image: url(grain-1.png); */
+    
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+  
+    margin-top: 8vw;
+  }
+  
+  /* hide inside scrollbar */
+  main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  section {
+    display: block;
+    min-height: 100vh;
+    padding: 0% 8%;
+  
+    scroll-snap-align: start;
+    scroll-margin: 5vh;
+  }
+
+  .project-header {
+    text-align: center;
+    padding-top: 0.67em; /*to create even space between bottom of header and first box (0.67em = default)*/
+  }
