@@ -186,12 +186,12 @@ main::-webkit-scrollbar {
 
   .overlay-image {
     /* width: 75%; */
-    width: 40%;
-    height: auto;
+    width: auto;
+    height: 80%;
   }
 
   @media screen and (max-width:865px){
     .overlay-image {
-      width: 75%;
+      height: 60%;
     }
   }
