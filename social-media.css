@@ -90,15 +90,26 @@ main::-webkit-scrollbar {
     border-radius: 2%;
     background-color: white; /*testing only*/
     transition: 0.3s;
+    
+    overflow: hidden;
   }
 
   .image-box .image-img {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100%; */
+
+    display: block; /* Ensure the image behaves like a block element */
+    width: 100%; /* Occupy full width of container */
+    height: 100%; /* Occupy full height of container */
+    object-fit: cover; /* Crop the image to cover the entire container */
     border-radius: 2%;
   }
+
+  .image-box.left .image-img, .image-box.right .image-img {
+    aspect-ratio: 1/1; /* Set a square aspect ratio */
+}
 
   .image-box.left:hover {
     transform: rotate(-3deg) scale(1.05);
