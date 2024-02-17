@@ -1,55 +1,163 @@
 /*universal styles*/
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow-y: hidden;
-  
+
     background-image: url(grain-1.png);
     background-position: center;
     background-size: cover;
 }
+
 p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
-  
-  main {
-    /* shorter than (100vh - (height of header)) -> avoid double scroll bar*/
-    /* position: fixed; */
-    /* bottom: 0; */
-    /* height:100vh; */
-    height: calc(100vh - 8vw); /* Subtract the height of the header */
+
+main {
+    height: calc(100vh - 8vw);
+    /* Subtract the height of the header */
     width: 100%;
-  
+
     /*scroll to snap*/
     overflow-y: scroll;
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
-  
-    /* background-image: url(grain-1.png); */
-    
-    /* background-repeat: no-repeat; */
+
     background-position: center;
     background-size: cover;
-  
+
     margin-top: 8vw;
-  }
-  
-  /* hide inside scrollbar */
-  main::-webkit-scrollbar {
+}
+
+/* hide inside scrollbar */
+main::-webkit-scrollbar {
     display: none;
-  }
-  
-  section {
+}
+
+section {
     display: block;
-    min-height: 100vh;
-    padding: 0% 8%;
-  
+    /* min-height: 100vh; */
+    padding: 0% 15%;
+
     scroll-snap-align: start;
     scroll-margin: 5vh;
-  }
+}
 
-  .project-header {
-    text-align: center;
-    padding-top: 0.67em; /*to create even space between bottom of header and first box (0.67em = default)*/
-  }
+/*project title styles*/
+.project-title {
+    min-height: 100vh;
+    margin-top: 8vw;
+    padding: 0%;
+}
+
+.title-area {
+    position: relative; /*to ensure .title-box is placed inside .title-area*/
+}
+
+
+.title-img {
+    border-radius: 5%;
+
+    width: 75%;
+    height: auto;
+
+    padding: 1vw 3vw;
+    margin-left: -0.5%; /*to create similar margin width as .title-box*/
+}
+
+.title-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+
+    /* padding: 3vw;
+    margin-left: -0.5%; to create similar margin width as .title-box */
+}
+
+.title-box {
+    background-color: white;
+    width: 30vw;
+    /* margin-top: -20%; */
+    margin-left: 30%;
+
+    position: absolute; /* Set position to absolute */
+    top: 75%; /* Position the box at the center vertically */
+    left: 50%; /* Position the box at the center horizontally */
+    transform: translate(-50%, -50%); /* Move the box back by half of its width and height */
+    z-index: 0; /* Ensure the box is placed above the image */
+
+    /* margin: 0vw 3vw; */
+    padding: 3%;
+    border-radius: 5%;
+}
+
+@media screen and (max-width:865px){
+
+    .title-area {
+        /* padding: 3vw; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 0% 0% 20% 20%;
+
+    }
+    
+    
+    .title-img {
+        border-radius: 5%;
+    
+        width: 100%;
+        height: auto;
+    
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .title-img img {
+        /* width: 100%; */
+        height: auto;
+        border-radius: 0%;
+    
+        /* padding: 1vw 0vw; */
+        /* margin-left: -0.5%; to create similar margin width as .title-box */
+    }
+
+    .title-box {
+        background-color: transparent;
+        width: 80%;
+        margin-left: 0%;
+        top: 0;
+        left: 0;
+        transform: none;
+        position: relative;
+        padding: 5%;
+    }
+
+    .title-name {
+        margin: 0%;
+        text-align: center;
+    }
+
+    .title-description {
+        margin: 0%;
+        text-align: center;
+    }
+}
+
+/*project universal styles*/
+
+.list-content ul{
+    padding-left: 2%; /*to align with the paragraphs*/
+}
+
+.list-content li{
+    font-size: 1.5rem;
+    font-family: "Gaegu";
+    margin-bottom: 0.5vh;
+}
+
+/*project problem styles*/
