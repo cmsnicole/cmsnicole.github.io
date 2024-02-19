@@ -60,4 +60,18 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.style.display = 'none';
         }
     });
+
+
+    const toggleBottoms = document.querySelectorAll('.toggle-bottom');
+
+    toggleBottoms.forEach(function(toggleBottom) {
+      const toggleContent = toggleBottom.parentElement.querySelector('.toggle-content');
+      const toggleSymbol = toggleBottom.parentElement.querySelector('.toggle-symbol');
+
+      toggleBottom.addEventListener('click', function() {
+        toggleContent.classList.toggle('opened');
+        toggleSymbol.classList.toggle('opened');
+      });
+    });
+
     })
