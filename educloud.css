@@ -371,6 +371,12 @@ section {
     font-size: 2rem;
   }
 
+  @media screen and (max-width:865px){
+    .highlight {
+      padding-left: 10%;
+    }
+  }
+
   /*toggle styles*/
   .toggle-header {
     display: flex;
