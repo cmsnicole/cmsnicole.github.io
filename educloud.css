@@ -405,3 +405,33 @@ section {
     height: auto;
     border-radius: 25px;
   }
+
+  .project-demo iframe {
+    /*1.5x*/
+    width: 840px;
+    height: 472.5px;
+  }
+
+  @media screen and (max-width:865px){
+    .project-demo iframe {
+      /*1x*/
+      width: 560px;
+      height: 315px;
+    }
+  }
+
+  @media screen and (max-width:570px){
+    .project-demo iframe {
+      /*0.75x*/
+      width: 420px;
+      height: 236.25px;
+    }
+  }
+
+  @media screen and (max-width:420px){
+    .project-demo iframe {
+      /*0.5x*/
+      width: 280px;
+      height: 157.5px;
+    }
+  }
