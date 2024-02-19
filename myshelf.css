@@ -1,4 +1,4 @@
-@media screen and (max-width:1680px){
+@media screen and (max-width:1600px){
     #tech-highlight {
         /* flex-direction: column; */
         flex-wrap: wrap;
@@ -6,7 +6,7 @@
     }
 
     #tech-highlight .highlight {
-        margin: 5%;
+        margin: 2%;
     }
   }
 
