@@ -1,7 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const carouselContainers = document.querySelectorAll('.carousel-container');
+    // Change balloon opacity on scroll
+    balloon = document.getElementById("balloon");
+    main = document.getElementsByTagName("main")[0];
+    var showBalloon = function () {
+        // var y = main.scrollY;
+        var y = main.scrollTop; 
+        if (y >= 500) {
+            balloon.className = "balloon show"
+        } else {
+            balloon.className = "balloon hide"
+        }
+    };
 
+    main.addEventListener("scroll", showBalloon);
+
+    // Change image to display on arrow click
+    const carouselContainers = document.querySelectorAll('.carousel-container');
     carouselContainers.forEach(function(container) {
         const leftButton = container.querySelector('.carousel-left');
         const rightButton = container.querySelector('.carousel-right');
@@ -62,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    // Show toggle content on arrow click
     const toggleBottoms = document.querySelectorAll('.toggle-bottom');
 
     toggleBottoms.forEach(function(toggleBottom) {
