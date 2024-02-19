@@ -63,10 +63,12 @@ section {
 
   .balloon.show {
     opacity: 1;
+    transition: all 0.5s ease;
   }
 
   .balloon.hide {
     opacity: 0;
+    transition: all 0.5s ease;
   }
 
   @media screen and (max-width:865px){

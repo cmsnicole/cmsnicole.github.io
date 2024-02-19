@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     balloon = document.getElementById("balloon");
     main = document.getElementsByTagName("main")[0];
     var showBalloon = function () {
-        // var y = main.scrollY;
         var y = main.scrollTop; 
         if (y >= 500) {
             balloon.className = "balloon show"
