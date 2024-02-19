@@ -332,7 +332,11 @@ section {
   .toggle-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .toggle-symbol {
+    transition: transform 0.3s ease;
   }
 
   .toggle-symbol.opened {
