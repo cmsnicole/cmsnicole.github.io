@@ -414,6 +414,8 @@ section {
     /*1.5x*/
     width: 840px;
     height: 472.5px;
+
+    margin-bottom: 5%;
   }
 
   @media screen and (max-width:865px){
