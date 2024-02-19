@@ -40,11 +40,16 @@ section {
     display: block;
     /* min-height: 100vh; */
 
-    /* padding: 0% 15%; */
-    padding: 0% 8%;
+    padding: 0% 15%;
 
     scroll-snap-align: start;
     scroll-margin: 5vh;
+}
+
+@media screen and (max-width:865px){
+  section {
+    padding: 0% 10%;
+  }
 }
 
 /*project title styles*/

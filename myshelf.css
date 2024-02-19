@@ -1,0 +1,22 @@
+@media screen and (max-width:1680px){
+    #tech-highlight {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #tech-highlight .highlight {
+        margin: 5%;
+    }
+  }
+
+  @media screen and (max-width:865px){
+    #tech-highlight .highlight {
+        flex-direction: column;
+        margin: 0% 0% 5% 0%;
+    }
+  }
+
+  #demo-description {
+    margin-top: 0%;
+  }
