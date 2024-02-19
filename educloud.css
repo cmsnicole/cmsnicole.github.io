@@ -39,9 +39,9 @@ main::-webkit-scrollbar {
 section {
     display: block;
     /* min-height: 100vh; */
-    
+
     /* padding: 0% 15%; */
-    padding: 0% 15%;
+    padding: 0% 8%;
 
     scroll-snap-align: start;
     scroll-margin: 5vh;
