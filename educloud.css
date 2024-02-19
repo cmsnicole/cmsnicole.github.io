@@ -193,8 +193,10 @@ section {
 
 /*project universal styles*/
 
+@media screen and (max-width:865px){
 .details h1, h2{
-    /* text-align: center; */
+    text-align: center;
+}
 }
 
 .list-content ul{
@@ -372,7 +374,7 @@ section {
   }
 
   @media screen and (max-width:865px){
-    .highlight {
+    .highlight ul{
       padding-left: 10%;
     }
   }
