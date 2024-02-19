@@ -1,0 +1,42 @@
+/*balloon styles*/
+.balloon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    transition: all 0.5s ease;
+  }
+  
+  .balloon img {
+    height: 150px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .balloon.show {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .balloon.hide {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (max-width:865px){
+    .balloon img {
+        height: 85px;
+      }
+  }
+  
+  .balloon:hover {
+    transform: translate3d(0, 3%, 0);
+    transition: transform 0.3s ease;
+  }
+  
+  .balloon p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px 0px 15px 0px;
+  }
