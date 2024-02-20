@@ -345,9 +345,28 @@ section {
     font-size: 2rem;
   }
 
+  /*for small horizontally-placed highlights*/
+  .highlight-small {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .highlight-small .highlight {
+    /* padding: 3%; */
+    width: 20%;
+  }
+
   @media screen and (max-width:865px){
     .highlight ul{
       padding-left: 10%;
+    }
+
+    .highlight-small {
+      flex-direction: column;
+    }
+
+    .highlight-small .highlight {
+      width: auto;
     }
   }
 
