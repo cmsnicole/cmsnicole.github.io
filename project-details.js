@@ -8,6 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const images = container.querySelectorAll('.carousel-img img');
         let currentIndex = 0;
     
+        // Hide left and right button when there is only 1 image
+        if (images.length == 1) {
+            leftButton.style.opacity = 0;
+            rightButton.style.opacity = 0;
+
+            leftButton.style.pointerEvents = 'none'; 
+            rightButton.style.pointerEvents = 'none'; 
+
+            leftButton.removeEventListener('click', prevImage);
+            rightButton.removeEventListener('click', nextImage);
+        }
+
         function showImage(index) {
             images.forEach((img, idx) => {
                 if (idx === index) {
