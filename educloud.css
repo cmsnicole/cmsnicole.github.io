@@ -188,7 +188,7 @@ section {
 
 .carousel-content {
     /* height: 50vh; */
-    /* width: 80vw; */
+    width: 100%;
     margin-bottom: 5%;
     padding: 2%;
     background-color: white;
@@ -423,15 +423,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    /* padding: 5%; */
     margin-bottom: 5%;
 
-    background-color: white;
-    border-radius: 25px;
+    /* background-color: white; */
+    /* border-radius: 25px; */
   }
 
   .project-demo img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     border-radius: 25px;
   }
