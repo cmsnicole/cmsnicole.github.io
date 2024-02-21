@@ -107,7 +107,7 @@ main::-webkit-scrollbar {
     border-radius: 2%;
   }
 
-  .image-box.left .image-img, .image-box.right .image-img {
+  .image-box.left .image-img, .image-box.center .image-img,.image-box.right .image-img {
     aspect-ratio: 1/1; /* Set a square aspect ratio */
 }
 
