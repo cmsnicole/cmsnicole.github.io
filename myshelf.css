@@ -1,9 +1,3 @@
-/* @media screen and (max-width:1600px){
-    #tech-highlight {
-        flex-direction: column;
-    }
-} */
-
 @media screen and (max-width: 1050px){
     .highlight-small {
         flex-direction: column;
