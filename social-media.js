@@ -22,9 +22,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close overlay when clicking outside of image
     const overlayArea = document.getElementById('overlay-area');
     const overlay = document.getElementById('overlay');
+
     overlayArea.addEventListener('click', function(e) {
         if (e.target === this) {
             overlay.style.display = 'none';
+        }
+    });
+
+    // Close overlay2 when clicking outside of video description box
+    const videoBox = document.querySelector('.video-box');
+    const overlay2Area = document.querySelector('.overlay2-area');
+    const overlay2Box = document.querySelector('.overlay2-box');
+    const overlay2 = document.getElementById('overlay2');
+
+    videoBox.addEventListener('click', function() {
+        overlay2.style.display = 'block';
+    });
+
+    overlay2Area.addEventListener('click', function(e) {
+        if (e.target === this) {
+            overlay2.style.display = 'none';
+        }
+    });
+
+    overlay2Box.addEventListener('click', function(e) {
+        if (e.target === this) {
+            overlay2.style.display = 'none';
         }
     });
 });
