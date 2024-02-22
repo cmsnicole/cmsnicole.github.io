@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
     // Change balloon opacity on scroll
     balloon = document.getElementById("balloon");
@@ -13,4 +13,4 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     main.addEventListener("scroll", showBalloon);
-})
+// })
