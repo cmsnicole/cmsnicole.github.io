@@ -370,10 +370,23 @@ main::-webkit-scrollbar {
   }
 
   .overlay2-text p {
-    margin: 1% 0%;
+    margin: 1%;
     font-size: 1.5rem;
     text-align: center;
   }
+
+  .overlay2-text::-webkit-scrollbar{
+    width:10px;
+}
+.overlay2-text::-webkit-scrollbar-track{
+    background:rgba(79, 44, 13, 0.2);
+    border-radius:10px;
+}
+.overlay2-text::-webkit-scrollbar-thumb{
+    background:#502C0C;
+    border-radius:10px;
+}
+
 
   .overlay2-video h2 {
     margin: 0%;
