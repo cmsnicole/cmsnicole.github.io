@@ -371,22 +371,17 @@ main::-webkit-scrollbar {
     text-align: center;
   }
 
-  #last-description {
-    margin-bottom: 3%;
-  }
-
   .overlay2-video h2 {
     margin: 0%;
     text-align: center;
   }
 
   .overlay2-video iframe {
-
     /*0.75x*/
     width: 420px;
     height: 236.25px;
 
-    margin: 3% 0%;
+    margin: 5% 0%;
   }
 
   @media screen and (max-width:525px){
