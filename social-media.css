@@ -217,6 +217,10 @@ main::-webkit-scrollbar {
   }
 
     /*video box styles*/  
+    .video-header {
+      text-align: center;
+    }
+    
     .video-content {
       display: flex;
       flex-wrap: wrap;
@@ -381,7 +385,7 @@ main::-webkit-scrollbar {
     width: 420px;
     height: 236.25px;
 
-    margin: 5% 0%;
+    margin: 3% 0%;
   }
 
   @media screen and (max-width:525px){
