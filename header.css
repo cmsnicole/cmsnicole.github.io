@@ -42,7 +42,7 @@ a {
 }
 
 /*header styles*/
-header {
+.nav-large {
     position: fixed;
     top: 0;
     height: 8vw;
@@ -67,7 +67,7 @@ nav {
 
 }
 
-header li {
+.nav-large li {
     display: inline-block;
     list-style-type: none;
 }
